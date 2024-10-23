@@ -1,5 +1,14 @@
+# (For temporary team use)Overall Projects Introduction
+Project intorduction:
+https://docs.google.com/presentation/d/1UI5Rn6neDGAFs0N6KmoS3grHL2HbSEk5fzXZOskehe0/edit#slide=id.g45164b6090_0_2
 
-# Your project name
+P2 intro:
+https://epfl-ada.github.io/teaching/fall2024/cs401/projects/
+P2 slide:
+https://docs.google.com/presentation/d/1Q4GDYQKk13QaUqH9slgQcTCwlXM8e02uaOumZZcSqQU/edit#slide=id.g15c22716fae_0_249
+
+# Some research about CMU Movie Summary Corpus
+
 This is a template repo for your project to help you organise and document your code better. 
 Please use this structure for your project and document the installation, usage and structure as below.
 
