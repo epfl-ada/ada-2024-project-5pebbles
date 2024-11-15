@@ -97,6 +97,7 @@ The current directory structure:
 ```
 ├── data                        <- data here
 │
+├── Image                       <- Graph for Analysis
 ├── src                         <- Source code
 │   ├── data                            <- Not used now
 │   ├── models                          <- Not used now
