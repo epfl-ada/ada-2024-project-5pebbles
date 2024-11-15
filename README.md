@@ -29,8 +29,12 @@ These questions serve as guideline of our project.
 (6) Are these distributions and trends affected by **demographic factors** such as gender, nationality, or other characteristics of the actors?
 <br><br>
 
+## Proposed additional datasets
+-----------------------------------------------
+We need more data for Research Question (5). We have not found an open dataset specifically focused on the assignment of power roles. Therefore, we plan to leverage large language models (LLMs), such as ChatGPT, to help determine power dynamics among characters. To enhance the accuracy of the data provided by LLMs, we will incorporate supplementary information from the IMDB dataset. Additionally, we will validate the data by selecting a sample set to assess the reliability of the LLM-generated information.
+<br><br>
 
-## Initial Processing
+## Method
 -----------------------------------------------
 
 ### Data Cleaning & Preparation
@@ -38,33 +42,27 @@ First, we carefully reviewed each dataset to assess whether its columns were rel
 
 Next, we performed data cleaning and preparation, removing any inconsistencies and grouping actors by zodiac sign based on their birthdates. We also group the movies based on its genre.
 
+### Data Enrichment: 
+Create the dataset of power roles. First, we randomly selected a sample of characters and manually labeled their power roles—such as hero or bad guy. Then, we will use LLMs to determine the power roles of these samples and validate the results. Once validated, we will apply the LLMs to classify power roles across the entire dataset.
 
 ### Data Analysis
 
 #### *Completed:*
 (1) **Distribution Analysis**: After group the actors into different zodiac signs, we will calculate the distribution. Then we will utilise chi-square to determine if the differences between the zodiac signs are significant or not.  
-(2) **Genre Analysis**: This includes 2 parts (research question 2 & 5).   
+(2) **Genre Analysis**
 Preferences for movie genres among actors of different zodiac signs: ① Calculate the distribution of different genre ② Calculate the genre distribution of each sign ③ Divide the two proportion ④ use Z-Test to test if the trends are significant.   
 
 #### *Ongoing:*
-(3) Casting preferences for different movie genres based on actors' zodiac signs:① Calculate the distribution of different genre ② Calculate the genre distribution of each sign③ Divide the two proportion ④ use Z-Test to test if the trends are significant.
+(3) **Casting preferences** :① Calculate the distribution of different genre ② Calculate the genre distribution of each sign③ Divide the two proportion ④ use Z-Test to test if the trends are significant.
 (4) **Power Role Analysis**: ① Map each actor’s zodiac sign to their respective role ② Use statistical methods (e.g., chi-square tests, logistic regression) to determine if there is a significant association between zodiac signs and the likelihood of being cast in specific roles. Analyze trends and compare how often actors of certain signs are cast as heroes versus villains or sidekicks.  
 (5) **Demographic factors Analysis**: Utilised the demographic factors to normalize the data, and repeat (1)-(3)
 <br><br>
 
 
-## Future Plan
+
+
+## Timeline
 -----------------------------------------------
-
-### I. Complete Research Question 4
-These are new questions raised during our recent work. With the existing analysis ,they should not be too hard to work on.
-
-### II. Data Enrichment: Proposed additional datasets
-We need more data for Research Question (5). We have not found an open dataset specifically focused on the assignment of power roles. Therefore, we plan to leverage large language models (LLMs), such as ChatGPT, to help determine power dynamics among characters. To enhance the accuracy of the data provided by LLMs, we will incorporate supplementary information from the IMDB dataset. Additionally, we will validate the data by selecting a sample set to assess the reliability of the LLM-generated information.
-
-First, we randomly selected a sample of characters and manually labeled their power roles—such as hero, villain, or sidekick. Then, we will use LLMs to determine the power roles of these samples and validate the results. Once validated, we will apply the LLMs to classify power roles across the entire dataset.
-
-### III. Timeline
 
 | Date       | Milestone                                             | Details                                                                                 |
 |------------|-------------------------------------------------------|------------------------------------------------------------------|
