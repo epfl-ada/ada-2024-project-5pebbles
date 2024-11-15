@@ -19,7 +19,7 @@ These questions serve as guideline of our project.
 
 (2) Do actors of different zodiac signs tend to **prefer specific movie genres**?
 
-*(Almost) Not Yet Started:*<br>
+*Ongoing:*<br>
 (3) Do certain movie genres show a **preference for actors** of specific zodiac signs during casting?
 
 (4) What is the difference in the **number** of movies performed by actors of different zodiac signs?
