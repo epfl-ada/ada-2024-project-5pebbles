@@ -150,7 +150,8 @@ def get_zodiac_sign(birthdate):
         return "Scorpio"
     elif "11-22" <= month_day <= "12-21":
         return "Sagittarius"
-    elif "12-22" <= month_day <= "12-31" or "01-01" <= month_day <= "01-19":
+    # elif "12-22" <= month_day <= "12-31" or "01-01" <= month_day <= "01-19":
+    elif "12-22" <= month_day or month_day <= "01-19":
         return "Capricorn"
     elif "01-20" <= month_day <= "02-18":
         return "Aquarius"
