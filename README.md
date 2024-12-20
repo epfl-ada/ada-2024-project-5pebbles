@@ -91,13 +91,12 @@ We also introduced and utilized the OSCAR dataset.
 #### 3. Data Analysis
 
 (1) **Distribution Analysis**: ① Grouping the actors into different zodiac signs ② calculated the distribution ③ utilised chi-square to determine if the differences between the zodiac signs are significant or not ④ checked the gender distribution of the actors.  
-(2) **Genre Analysis**:   ① Calculate the distribution of different genre ② Calculate the genre distribution of each sign ③ Divide the two proportion ④ use statstical method to test if the trends are significant.  
+(2) **Genre Analysis**: ① Calculate the overall distribution of film genres in the dataset ② Calculate the genre distribution for each zodiac sign ③ Compare both distributions to identify over/under-representation patterns ④ Use chi-square tests and ANOVA to determine if the genre preferences across zodiac signs are statistically significant.
 (3) **Casting preferences** : ① Calculate the distribution of different genre ② Calculate the genre distribution of each sign ③ Divide the two proportion ④ use statstical method to test if the trends are significant.  
 (4) **Number of Movies** :  ① calculate the average number of movie the actor perform for each zodiac sign ② use use statstical method to test if the differences between the zodiac signs are significant or not.  
-(5) **Power Role Analysis**: ① Map each actor’s zodiac sign to their respective role ② Use statistical methods (e.g., chi-square tests, logistic regression) to determine if there is a significant association between zodiac signs and the likelihood of being cast in specific roles ③ Analyze trends and compare how often actors of certain signs are cast as heroes versus villains or sidekicks.  
+(5) **Power Role Analysis**: ① Map each actor's zodiac sign to their respective leading/supporting roles using character billing position and role significance ② Calculate the lead role ratio for each zodiac sign ③ Use statistical methods (chi-square tests, ANOVA) to determine if there are significant associations between zodiac signs and lead roles ④ Analyze the interaction effects between zodiac signs and film genres for lead roles.
 (6) **Career longevity**: ① calculated the average career entry time, retirement time, and the time span between them for actors of each zodiac sign.  ② Statistical tests were then applied to determine whether the observed differences in these averages across zodiac signs were significant.  
-(7) **Type Diversity Index**: 
-
+(7) **Type Diversity Index**: ① Developed a comprehensive Genre Diversity Index (GDI) combining Raw Diversity Score (30%), Shannon Diversity Index (40%), and Genre Balance Score (30%) ② Calculated GDI scores for actors of each zodiac sign ③ Used Kruskal-Wallis test to determine if the differences in GDI scores between zodiac signs are statistically significant ④ Analyzed the distribution patterns and variability of GDI scores across different signs.
 (8) **Oscar Analysis**: ① Calculate the zodiac distribution of Oscar winners Calculate the awarding rate of different zodiac signs ② Use z-score and Chi-square Test to test if the differences of awarding rate among different zodiac signs are significant
 
 <br><br>
