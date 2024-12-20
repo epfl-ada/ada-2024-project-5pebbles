@@ -3,9 +3,11 @@
 <br>
 
 ## Abstract
-Astrology, an ancient practice that predicts present and future events through the movements of celestial bodies, remains popular despite a lack of scientific validation. Many continue to believe that individuals born under different zodiac signs exhibit distinct personality traits. Our project aims to use statistical methods to examine whether zodiac-related trends exist in the film industry, potentially explaining why such pseudoscientific beliefs persist.
+Astrology, an ancient practice connecting celestial movements to earthly events, continues to influence modern beliefs despite its lack of scientific foundation. Our project delves into the intersection of astrology and the film industry by examining zodiac-related trends among actors. Using statistical methods and enriched datasets, we uncover notable patterns linking zodiac signs to various aspects of actors’ careers. Our project offers insights into the persistence of pseudoscientific beliefs and their subtle manifestations in cultural industries like cinema.
 
-To explore these trends, we first analyze the distribution of actors' zodiac signs based on their birthdates. We then investigate whether individuals of different zodiac signs exhibit different patterns within the film industry, such as genre preferences or the types of roles they are cast in. In this stage, we plan to use large language models (LLMs) to obtain data on role types, validating the accuracy of this information to ensure reliable analysis. Finally, we plan to evaluate if there are some factors will influence these distributions and tendencies, such as gender and nationality. 
+
+Key findings include a non-uniform distribution of actors across zodiac signs, with certain signs dominating in representation. Genre preferences and casting tendencies show significant variation by zodiac sign, revealing potential biases in the industry. Analysis of actors' roles indicates patterns in the assignment of power roles (e.g., heroes and villains) and correlations between zodiac signs and career longevity. Additionally, we observe varying probabilities of Oscar wins among zodiac signs.
+
 <br><br>
 
 ## Research Questions
