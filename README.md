@@ -143,7 +143,7 @@ Note:
 │   ├── scripts                         <- Not used
 │   ├── utils                           <- Utility directory contains the functions used in results
 │
-├── tests                       <- containing all the utils and test python files
+├── tests                       <- containing test python files and the code using llms to generate the additional data  
 │
 ├── results.ipynb               <- well-structured notebook showing the results
 │
