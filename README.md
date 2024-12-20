@@ -39,6 +39,44 @@ OSCAR Dataset: [Link needed] This dataset is used to explore the relationship be
 #### Self-Generated Dataset  
 We also created a new dataset using GPT and Claude, which examines the relationship between constellations and whether actors played leading roles.
 
+##### Data Preprocessing
+The initial dataset was created by merging three original files from the CMU Movie Summary Corpus:
+- Character metadata file (containing character and actor information)
+- Movie metadata file (containing movie titles and IDs)
+- Plot summaries file (containing movie plots)
+
+These files were combined to create a comprehensive dataset where each entry contains both character and movie information.
+
+##### AI Analysis Process
+
+###### Prompt Design
+For each character, we constructed a standardized prompt containing:
+- Movie title
+- Complete plot summary
+- List of all actors in the movie
+- Target actor name
+
+The prompt asks the AI to determine whether the target actor plays a main character, requiring a simple "True" or "False" response.
+
+###### Dual AI Validation
+We employed two state-of-the-art language models:
+- GPT-4 (OpenAI)
+- Claude-3 (Anthropic)
+
+Each model processed the entire dataset independently:
+- GPT-4 provided decisions for 78,265 characters
+- Claude-3 provided decisions for 78,263 characters
+
+###### Cross-Validation Results
+The final dataset was created by cross-referencing decisions from both AIs:
+- Total characters analyzed: 103,071
+- Characters with AI agreement: 67,580
+- Identified main characters (with agreement): 20,773
+
+##### Validation
+A manual verification of 50 randomly selected samples from the AI-agreed dataset was conducted against online sources, confirming high reliability of the cross-validated results.
+
+
 <br><br>
 
 ## Methodologies
