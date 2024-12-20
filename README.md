@@ -60,8 +60,8 @@ The prompt asks the AI to determine whether the target actor plays a main charac
 
 ###### Dual AI Validation
 We employed two state-of-the-art language models:
-- GPT-4 (OpenAI)
-- Claude-3 (Anthropic)
+- GPT-4o mini (OpenAI)
+- Claude-3.5 Haiku (Anthropic)
 
 Each model processed the entire dataset independently:
 - GPT-4 provided decisions for 78,265 characters
