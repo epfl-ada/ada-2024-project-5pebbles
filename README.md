@@ -64,8 +64,8 @@ We employed two state-of-the-art language models:
 - Claude-3.5 Haiku (Anthropic)
 
 Each model processed the entire dataset independently:
-- GPT-4 provided decisions for 78,265 characters
-- Claude-3 provided decisions for 78,263 characters
+- GPT-4o mini provided decisions for 78,265 characters
+- Claude-3.5 Haiku provided decisions for 78,263 characters
 
 ###### Cross-Validation Results
 The final dataset was created by cross-referencing decisions from both AIs:
