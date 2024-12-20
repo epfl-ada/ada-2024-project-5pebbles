@@ -34,7 +34,7 @@ These questions serve as guideline of our project.
 
 ## Additional datasets
 #### External Dataset  
-OSCAR Dataset: [Link needed] This dataset is used to explore the relationship between constellations and the Academy Awards (Oscars).
+OSCAR Dataset: [https://data.world/crowdflower/academy-awards-demographics] This dataset is used to explore the relationship between constellations and the Academy Awards (Oscars).
 
 #### Self-Generated Dataset  
 We also created a new dataset using GPT and Claude, which examines the relationship between constellations and whether actors played leading roles.
@@ -133,12 +133,12 @@ Note:
 
 ```
 ├── data                        <- data here
-│   ├── ProcessedDatasets                <- cleaned movie dataset and processed Oscar
+│   ├── ProcessedDatasets                <- cleaned movie dataset, processed Oscar and self generate data
 │   ├── RawDatasets                      <- raw datasets: MovieSummary and Oscar
 │
 ├── figures                     <- Graph for Analysis
 ├── src                         <- Source code
-│   ├── data                            <- Not used
+│   ├── data                            <- data loader
 │   ├── models                          <- Not used
 │   ├── scripts                         <- Not used
 │   ├── utils                           <- Utility directory contains the functions used in results
