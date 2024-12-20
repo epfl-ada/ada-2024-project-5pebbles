@@ -52,27 +52,26 @@ We also introduced and utilized the OSCAR dataset.
 
 #### 3. Data Analysis
 
-(1) **Distribution Analysis**: After grouping the actors into different zodiac signs, we calculated the distribution. Then we utilised chi-square to determine if the differences between the zodiac signs are significant or not. We also checked the gender distribution of the actors.  
-(2) **Genre Analysis**:  Preferences for movie genres among actors of different zodiac signs: ① Calculate the distribution of different genre ② Calculate the genre distribution of each sign ③ Divide the two proportion ④ use statstical method to test if the trends are significant.  
-(3) **Casting preferences** : ① Calculate the distribution of different genre ② Calculate the genre distribution of each sign③ Divide the two proportion ④ use statstical method to test if the trends are significant.  
-(4) **Number of Movies** : we calculated the average number of movie the actor perform for each zodiac sign and use use statstical method to test if the differences between the zodiac signs are significant or not.  
-(5) **Power Role Analysis**: ① Map each actor’s zodiac sign to their respective role ② Use statistical methods (e.g., chi-square tests, logistic regression) to determine if there is a significant association between zodiac signs and the likelihood of being cast in specific roles. Analyze trends and compare how often actors of certain signs are cast as heroes versus villains or sidekicks.  
-(6) **Career longevity**: 
-
+(1) **Distribution Analysis**: ① Grouping the actors into different zodiac signs ② calculated the distribution ③ utilised chi-square to determine if the differences between the zodiac signs are significant or not ④ checked the gender distribution of the actors.  
+(2) **Genre Analysis**:   ① Calculate the distribution of different genre ② Calculate the genre distribution of each sign ③ Divide the two proportion ④ use statstical method to test if the trends are significant.  
+(3) **Casting preferences** : ① Calculate the distribution of different genre ② Calculate the genre distribution of each sign ③ Divide the two proportion ④ use statstical method to test if the trends are significant.  
+(4) **Number of Movies** :  ① calculate the average number of movie the actor perform for each zodiac sign ② use use statstical method to test if the differences between the zodiac signs are significant or not.  
+(5) **Power Role Analysis**: ① Map each actor’s zodiac sign to their respective role ② Use statistical methods (e.g., chi-square tests, logistic regression) to determine if there is a significant association between zodiac signs and the likelihood of being cast in specific roles ③ Analyze trends and compare how often actors of certain signs are cast as heroes versus villains or sidekicks.  
+(6) **Career longevity**: ① calculated the average career entry time, retirement time, and the time span between them for actors of each zodiac sign.  ② Statistical tests were then applied to determine whether the observed differences in these averages across zodiac signs were significant.  
 (7) **Type Diversity Index**: 
 
-(8) **Oscar Analysis**: 
+(8) **Oscar Analysis**: ① Calculate the zodiac distribution of Oscar winners Calculate the awarding rate of different zodiac signs ② Use z-score and Chi-square Test to test if the differences of awarding rate among different zodiac signs are significant
 
 <br><br>
 
 ## Timeline
 
-| Date       | Milestone                                             | Details                                                                                 |
+| Date       | Description                                             | Details                                                                                 |
 |------------|-------------------------------------------------------|------------------------------------------------------------------|
 | **11.15**  | Data Cleaning and Preparation                         | Initial analysis for Data Analysis goals (1) & (2)                                           |
-| **11.29**  | Data Enrichment & Demographic Factors Analysis        | Enrichment and demographic analysis for Data Analysis (1) & (2), plus Deadline for Homework 2       |
-| **12.06**  | Finish Data Analysis                                  | Complete all analysis tasks                                                            |
-| **12.13**  | Report Writing                                        | Begin drafting and finalizing the project report                                       |
+| **11.29**  | Data Enrichment & Demographic Factors Analysis        | Enrichment and demographic analysis, plus Deadline for Homework 2       |
+| **12.06**  | Finish Major Data Analysis                                  | Completed all analysis tasks                                                            |
+| **12.13**  | Refinement and Story website building                           | Begin drafting and finalizing the project report                                       |
 | **12.20**  | Deadline: Milestone 3                                 | Submit the final project deliverables                                                 |
 
 <br><br>
@@ -81,16 +80,16 @@ We also introduced and utilized the OSCAR dataset.
 
 | Member           | Primary Contributions                     |
 |-------------------|------------------------------------------|
-| Zhichen FANG         | (1) (3) (4) (5) (6) (8)& Data Enrichment & README  |
+| Zhichen FANG         | (1) (2) (4) (6) (8) & Introducing Oscar dataset & README  |
 | Jiaqi DING           |  (1) (5) & Data Cleaning & Homework & README   |
-| Xin Huang              | (2) (3) (4) (5) (7)   |
-| Maksymiliann Schoeffel    | (2) (5) & Homework & Data story constructing     |
+| Xin Huang              | (2) (5) (7)  & Generating power role dataset |
+| Maksymiliann Schoeffel    | (2) (3) & Homework & Website constructing    |
 | ~~Zoyed~~        | ~~Never showed up and considered quit this project with TA approval~~ |
-| Yi REN (joined team later)    | Monitoring and Optimising & Homework & Data story constructing    |
+| Yi REN (joined team later)    | (3) & Coordination & Homework   |
 
 Note:
 1. (n) means the task lindex.  
-2. All group members engaged in demographic factors analysis, and working for the final data story. All work are discussed and optimized within group.  
+2. All group members contributed to compiling portions of the final data story. All work was collaboratively discussed and optimized within the group.  
 3. we have assigned some member to do the homework while others doing project.  
 <br><br>
 ## Project Structure
