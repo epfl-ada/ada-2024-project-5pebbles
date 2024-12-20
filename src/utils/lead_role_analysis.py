@@ -92,7 +92,7 @@ def analyze_genre_lead_roles(merged_data, movie_meta, reverse_mapping):
     
     return pd.DataFrame(genre_metrics)
 
-def perform_statistical_tests(merged_data):
+def perform_lead_role_statistical_tests(merged_data):
     """Perform statistical tests"""
     # Prepare data
     valid_data = merged_data.dropna(subset=['is_main_character', 'calculated_zodiac'])

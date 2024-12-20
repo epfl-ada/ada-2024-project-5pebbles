@@ -11,7 +11,8 @@ def GenderDistributionAnalysis(data):
 
     # use seaborn to create bar plot
     plt.figure(figsize=(10, 6))
-    sns.barplot(x='Zodiac Sign', y='count', hue='Actor gender', data=zodiac_gender_counts)
+    ax=sns.barplot(x='Zodiac Sign', y='count', hue='Actor gender', data=zodiac_gender_counts)
+    ax.set_ylim(1000,2700)
 
     # add title and lable
     plt.title('Zodiac Sign Distribution by Gender')

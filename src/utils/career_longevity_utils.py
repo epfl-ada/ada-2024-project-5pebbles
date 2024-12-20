@@ -9,8 +9,18 @@ def actor_longevity_analysis(actor_longevity):
     # longevity
     actor_longevity_counts=actor_longevity.groupby('Zodiac Sign')['Career Longevity'].mean().reset_index()
     actor_longevity_counts = actor_longevity_counts.sort_values(by='Career Longevity', ascending=False)
-    plt.figure(figsize=(8, 6))
-    sns.barplot(x='Zodiac Sign', y='Career Longevity', data=actor_longevity_counts, palette="pastel")
+    plt.figure(figsize=(10, 4))
+    ax=sns.barplot(x='Zodiac Sign', y='Career Longevity', data=actor_longevity_counts, palette="pastel",  hue='Zodiac Sign', legend=False)
+    # 手动添加数值标签
+    for p in ax.patches:
+        height = p.get_height()  # 获取每个条形的高度
+        ax.text(
+            p.get_x() + p.get_width() / 2., height,  # 条形的中心位置
+            f'{height:.3f}',  # 标签内容
+            ha='center', va='bottom', fontsize=12, color='black'  # 字体和位置
+        )
+
+    ax.set_ylim(9.6,10.4)
     plt.title("Average Career Longevity of Different Zodiac Signs", fontsize=16)
     plt.xlabel("Zodiac Sign", fontsize=12)
     plt.ylabel("Average Career Longevity", fontsize=12)
@@ -24,8 +34,18 @@ def actor_entry_age_analysis(actor_longevity):
     # min
     entry_age_counts=actor_longevity.groupby('Zodiac Sign')['min'].mean().reset_index()
     entry_age_counts = entry_age_counts.sort_values(by='min', ascending=False)
-    plt.figure(figsize=(8, 6))
-    sns.barplot(x='Zodiac Sign',y='min', data=entry_age_counts, palette="pastel")
+    plt.figure(figsize=(10, 4))
+    ax=sns.barplot(x='Zodiac Sign',y='min', data=entry_age_counts, palette="pastel",hue='Zodiac Sign', legend=False)
+    ax.set_ylim(30.3, 31.3)
+    # 手动添加数值标签
+    for p in ax.patches:
+        height = p.get_height()  # 获取每个条形的高度
+        ax.text(
+            p.get_x() + p.get_width() / 2., height,  # 条形的中心位置
+            f'{height:.3f}',  # 标签内容
+            ha='center', va='bottom', fontsize=12, color='black'  # 字体和位置
+        )
+
     plt.title("Average Entry Age of Zodiac Signs", fontsize=16)
     plt.xlabel("Zodiac Sign", fontsize=12)
     plt.ylabel("Average Entry Age", fontsize=12)
@@ -38,8 +58,18 @@ def actor_retire_age_analysis(actor_longevity):
     # Max
     retire_age_counts=actor_longevity.groupby('Zodiac Sign')['max'].mean().reset_index()
     retire_age_counts = retire_age_counts.sort_values(by='max', ascending=False)
-    plt.figure(figsize=(8, 6))
-    sns.barplot(x='Zodiac Sign', y='max', data=retire_age_counts, palette="pastel")
+    plt.figure(figsize=(10, 4))
+    ax=sns.barplot(x='Zodiac Sign', y='max', data=retire_age_counts, palette="pastel",hue='Zodiac Sign', legend=False)
+    ax.set_ylim(39.4, 40.4)
+    # 手动添加数值标签
+    for p in ax.patches:
+        height = p.get_height()  # 获取每个条形的高度
+        ax.text(
+            p.get_x() + p.get_width() / 2., height,  # 条形的中心位置
+            f'{height:.3f}',  # 标签内容
+            ha='center', va='bottom', fontsize=12, color='black'  # 字体和位置
+        )
+
     plt.title("Average Retire Age of Zodiac Signs", fontsize=16)
     plt.xlabel("Zodiac Sign", fontsize=12)
     plt.ylabel("Average Retire Age", fontsize=12)

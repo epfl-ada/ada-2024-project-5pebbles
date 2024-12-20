@@ -2,7 +2,8 @@ import pandas as pd
 import re
 import matplotlib.pyplot as plt
 from datetime import datetime
-
+import scipy.stats as stats
+import numpy as np
 
 
 
@@ -364,5 +365,37 @@ def plot_zodiac_weighted_contribution_to_genres(genre_counts_by_zodiac, zodiac_c
         print(f"\nGenre: {genre}")
         for _, row in group.iterrows():
             print(f"  Zodiac Sign: {row['Zodiac Sign']} - Weighted Contribution: {row['Weighted Contribution']:.2f}%")
+
+
+# Chi-squared test of homogeneity
+
+def chi_squared_test_genre_zodiac(zodiac_genre_df,overall_zodiac_distribution, genre_now):
+    specific_zodiac_disctribution = zodiac_genre_df[zodiac_genre_df['Cleaned Movie genres'] == genre_now]['Zodiac Sign'].value_counts().sort_index()
+
+    chi_squared_contigency_df = pd.DataFrame({
+        'Total': overall_zodiac_distribution,
+        genre_now: specific_zodiac_disctribution
+    }).T
+    print(f"Chi-Squared Contingency Table for {genre_now}:")
+    print(chi_squared_contigency_df)
+    chi2, p, dof, expected = stats.chi2_contingency(chi_squared_contigency_df)
+    confidence_level = 0.95
+
+    print(f"Chi-squared statistic: {chi2:.3f}")
+    print(f"P-value: {p:.3f}, Degrees of Freedom: {dof}")
+    print(f"{genre_now} and Zodiac Sign are {'DEPENDENT' if p < 1 - confidence_level else 'independent'} at {confidence_level * 100}% confidence level")
+    print("Expected values:")
+    print(pd.DataFrame(expected.round(2), columns=overall_zodiac_distribution.index, index=[f'Total', f'{genre_now}']))
+    observed = np.array([overall_zodiac_distribution.tolist(), specific_zodiac_disctribution.tolist()])
+    chi_square_statistic = ((observed - expected) ** 2 / expected).round(2)
+    chi_square_statistic = pd.DataFrame(chi_square_statistic, columns=overall_zodiac_distribution.index, index=[f'Total', f'{genre_now}'])
+
+    print("Chi-square statistic contribution:")
+    print(chi_square_statistic)
+
+    # Get the top 3 chi-square statistics
+    top_chi_square_stats = chi_square_statistic.unstack().sort_values(ascending=False).head(3)
+    print("Top 3 Chi-Square Statistics: ")
+    print(top_chi_square_stats)
             
 

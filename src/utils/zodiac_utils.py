@@ -99,7 +99,21 @@ def illstrate_zodiac_distribution(zodiac_counts):
     plt.figure(figsize=(10, 6))
 
     # Create a bar plot with a color map
-    sns.barplot(x='Count', y='Zodiac Sign', data=zodiac_counts, palette='coolwarm_r', hue='Zodiac Sign', legend=False)
+    ax = sns.barplot(x='Count', y='Zodiac Sign', data=zodiac_counts, palette='coolwarm_r', hue='Zodiac Sign',
+                     legend=False)
+    ax.set_xlim(3500, 4200)
+
+    # Show the numeric labels for each bar
+    # 添加数值标签
+    for p in ax.patches:
+        width = p.get_width()  # 获取条形的宽度
+        ax.text(
+            width + 1,  # 数值放置在条形右侧
+            p.get_y() + p.get_height() / 2.,  # 条形的中心高度
+            f'{int(width)}',  # 显示的数值
+            ha='left', va='center', fontsize=12, color='black'  # 字体样式
+        )
+    # plt.bar_label(ax.containers[0])
 
     # Add labels and title
     plt.title('Distribution of Zodiac Signs among Actors', fontsize=16)
