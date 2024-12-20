@@ -2,6 +2,9 @@
 
 <br>
 
+## Website for Our Data Story
+https://maksymiliann.github.io/Team-5Pebbles/
+
 ## Abstract
 Astrology, an ancient practice connecting celestial movements to earthly events, continues to influence modern beliefs despite its lack of scientific foundation. Our project delves into the intersection of astrology and the film industry by examining zodiac-related trends among actors. Using statistical methods and enriched datasets, we uncover notable patterns linking zodiac signs to various aspects of actors’ careers. Our project offers insights into the persistence of pseudoscientific beliefs and their subtle manifestations in cultural industries like cinema.
 
